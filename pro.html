@@ -1,0 +1,132 @@
+
+          
+            
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Procurement Request Form</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f4f4;
+        color: #333;
+    }
+
+    .wrapper {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .card {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+        text-align: center;
+        color: #222;
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-bottom: 18px;
+        font-size: 15px;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #0077cc;
+        outline: none;
+        box-shadow: 0 0 4px rgba(0, 119, 204, 0.3);
+    }
+
+    textarea {
+        height: 100px;
+        resize: none;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 6px;
+        background: #0077cc;
+        color: #fff;
+        font-size: 17px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background 0.2s ease;
+    }
+
+    button:hover {
+        background: #005fa3;
+    }
+
+    .footer-note {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 13px;
+        color: #666;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="card">
+
+        <h1>Purchase Request Form</h1>
+
+        <form action="https://formsubmit.co/daveophobia@gmail.com" method="POST">
+
+            <!-- FormSubmit configuration -->
+            <input type="hidden" name="_subject" value="New Procurement Request Received">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label>Material Type</label>
+            <input type="text" name="material_type" placeholder="Enter material name..." required>
+
+            <label>Quantity</label>
+            <input type="number" name="quantity" placeholder="Enter quantity..." required>
+
+            <label>Required Date</label>
+            <input type="date" name="required_date" required>
+
+            <label>Buyer Name</label>
+            <input type="text" name="buyer_name" placeholder="Enter your name">
+
+            <label>Buyer Email</label>
+            <input type="email" name="buyer_email" placeholder="Enter your email">
+
+            <label>Notes</label>
+            <textarea name="notes" placeholder="Additional details..."></textarea>
+
+            <button type="submit">Submit Request</button>
+
+        </form>
+
+        <p class="footer-note">Your request will be emailed securely.</p>
+
+    </div>
+</div>
+
+</body>
+</html>
